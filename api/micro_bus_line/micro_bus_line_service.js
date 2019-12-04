@@ -6,7 +6,7 @@ function getLines(req, res, next) {
         res.send(response.data)
       })
       .catch(function (error) {
-        res.send({errors: error})
+        res.send({error: error})
       })
       .finally(function () {
         next()
